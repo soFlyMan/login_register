@@ -1,30 +1,46 @@
 
 body{
-	background-color: #35b45d;
+	background-color: rgb(153, 188, 212);
 }
 .login{
-    width: 400px;
-	height: 400px;
+	width: 35%;
+	height: 100%;
+    min-width:450px;
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	margin:auto;
-	background:  rgba(204, 204, 204, 0.2);
+	background: #bdd4e3;
 
 
 }
 .login .logo{
 	width: 100%;
-	height: 40%;
+	height: 30%;
 	text-align: center;
 	font-size:50px;
 	padding-top: 40px;
 	
 }
-.login .logo .input-group {
-	
+.login .login-content{
+	height: auto;
+	padding-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.input-group-addon{
+	color: #fff;
+}
+.input-group{
+	border-bottom: 1px solid #eee;
+}
+.login .input-group input,.login .input-group span{
+	border-style: none;
+	background:  none;
+
+}.login .input-group input{
+	height: 60px;
 }
 .login .forgetPwd{
 	text-align: center;
@@ -32,16 +48,24 @@ body{
 .login .login-button{
 	width: 100%;
 	text-align:center;
-	margin-top: 20px;
+	margin-top: 12px;
 }
 .login .login-button button{
-	width: 70%;
-	height: 40px;
-	font-size: 14px;
+	width: 18%;
+	height: 50px;
+	font-size: 18px;
+}
+.btn-primary {
+background-color: #99bcd4;
+border-color: #99bcd4;
+border-radius: 8px;
+}
+.btn-primary:hover{
+	background-color: #78aed1;
+	border-color: #78aed1;
 }
 .login .to-register{
-	margin-top: 20px;
-   text-align: center;
+    text-align: center;
 }
 .login .to-register a{
     text-decoration: none;
@@ -50,4 +74,16 @@ body{
 }
 .login .to-register a:hover{
 	color: #ccc;
+}
+.login .footer{
+	height: 100px;
+	background-color: #bdd4e3;
+	text-align: center;
+}
+.form-control{
+	border:none;
+	box-shadow:none;
+}
+.form-control:focus{
+	box-shadow: none;
 }
