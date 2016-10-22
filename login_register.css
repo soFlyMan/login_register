@@ -60,9 +60,19 @@ background-color: #99bcd4;
 border-color: #99bcd4;
 border-radius: 8px;
 }
+/*.btn:focus{
+	outline: none;
+}*/
 .btn-primary:hover{
 	background-color: #78aed1;
 	border-color: #78aed1;
+}
+.btn-primary:focus{
+	background-color: #78aed1;
+	border-color: #78aed1;
+	border-radius: 8px;
+	box-shadow: none;
+
 }
 .login .to-register{
     text-align: center;
@@ -86,4 +96,11 @@ border-radius: 8px;
 }
 .form-control:focus{
 	box-shadow: none;
+}
+.icon-remove-sign{
+	display: none;
+}
+.validate{
+	width: 160px;
+	height: 40px;
 }
