@@ -1,5 +1,5 @@
 $(function(){
-$('input').bind('input propertychange', function() {
+$('.inputInfo').bind('input propertychange', function() {
 	var clContent=$(this).val();
 	var cl=$(this).next().children();
 	if(clContent!=""){
@@ -10,7 +10,8 @@ $('input').bind('input propertychange', function() {
     
 });
 $('.icon-remove-sign').bind('click',function(){
-	$('input').val("");
+	var clContent=$(this).parent().prev();
+	$(clContent).val("");
 	$(this).fadeOut();
 });
 })
