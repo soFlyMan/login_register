@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -16,25 +16,38 @@
         <div class="login">
             <div class="logo"><strong>注册</strong></div>
             <div class="login-content">
-                <div class="input-group"><span class="input-group-addon">邮箱&nbsp;</span>
+                <div class="input-group">
+                	<span class="input-group-addon input-group-addon-width">邮箱</span>
                     <input type="text" class="form-control inputInfo" placeholder="123@gmail.com">
                     <span class="input-group-addon"><i class="icon icon-remove-sign"></i></span>
                 </div>
-                <div class="input-group"><span class="input-group-addon">密码&nbsp;</span>
+                <div class="input-group">
+                	<span class="input-group-addon input-group-addon-width">密码</span>
                     <input type="password" class="form-control inputInfo" placeholder="密码">
                     <span class="input-group-addon"><i class="icon icon-remove-sign"></i></span>
                 </div>
-                <div class="input-group"><span class="input-group-addon">确认密码</span>
+                <div class="input-group">
+                	<span class="input-group-addon input-group-addon-width">确认密码</span>
                     <input type="password" class="form-control inputInfo" placeholder="密码">
                     <span class="input-group-addon"><i class="icon icon-remove-sign"></i></span>
                 </div>
-                <div class="input-group"><span class="input-group-addon">验证码</span>
-                    <input type="text" class="form-control" placeholder="">
-                    <span class="input-group-addon validate"><img src="下载.jpg" alt=""></span>
+                <div class="validate">
+                    <div class="col-xs-9">
+                        <div class="input-group">
+                            <span class="input-group-addon input-group-addon-width">验证码</span>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div> 
+                    <div class="col-xs-3 text-right">
+                        <img src="下载.jpg" alt="">
+                    </div>
                 </div>
                 <div class="login-button">
                     <button class="btn btn-primary" type="button"><strong>登陆</strong></button>
-                    <div class="to-register"><a href="">或者，创建账户</a></div>
+
+                    <div class="to-go">
+                    	<a href="#" class="btn btn-primary">还没有账号？创建账户</a>
+                    </div>
                 </div>
                 <div class="forgetPwd"><a href="">忘记密码</a></div>
             </div>

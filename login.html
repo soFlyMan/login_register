@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,12 @@
     <script src="dist/lib/jquery/jquery.js"></script>
     <script src="dist/js/zui.min.js"></script>
     <script src="login_register.js"></script>
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" href="ie6.css" />
+    <![endif]--> 
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="ie7.css" />
+    <![endif]-->
 </head>
 
 <body>
@@ -16,21 +22,30 @@
         <div class="login">
             <div class="logo"><strong>登陆</strong></div>
             <div class="login-content">
-                <div class="input-group"><span class="input-group-addon">邮箱&nbsp;</span>
-                    <input type="text" class="form-control inputInfo" id="clContent" placeholder="123@gmail.com">
+                <div class="input-group">
+                    <span class="input-group-addon input-group-addon-width">邮箱</span>
+                    <input type="text" class="form-control inputInfo" id="clContent" placeholder="请输入您的电子邮箱">
                     <span class="input-group-addon"><i class="icon icon-remove-sign"  id="cl"></i></span>
                 </div>
-                <div class="input-group"><span class="input-group-addon">密码&nbsp;</span>
-                    <input type="password" class="form-control inputInfo" placeholder="密码">
+                <div class="input-group">
+                    <span class="input-group-addon input-group-addon-width">密码</span>
+                    <input type="password" class="form-control inputInfo" placeholder="请输入您的密码">
                     <span class="input-group-addon"><i class="icon icon-remove-sign"></i></span>
                 </div>
-                <div class="input-group"><span class="input-group-addon">验证码</span>
-                    <input type="text" class="form-control" placeholder="">
-                    <span class="input-group-addon validate"><img src="下载.jpg" alt=""></span>
+                <div class="validate">
+                    <div class="col-xs-9">
+                        <div class="input-group">
+                            <span class="input-group-addon input-group-addon-width">验证码</span>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div> 
+                    <div class="col-xs-3 text-right">
+                        <img src="下载.jpg" alt="">
+                    </div>
                 </div>
+                    
                 <div class="login-button">
                     <button class="btn btn-primary" type="button"><strong>登陆</strong></button>
-                    
                 </div>
                 <div class="forgetPwd"><a href="">忘记密码</a></div>
                 <div class="to-register"><a href="">或者，创建账户</a></div>
